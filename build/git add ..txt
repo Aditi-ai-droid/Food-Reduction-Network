@@ -1,0 +1,6 @@
+git add .
+ 
+git commit -m "Updated styles and added images"
+
+
+git push origin main
