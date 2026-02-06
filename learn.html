@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Food Reduction Network</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Food Reduction Network</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Food Reduction Network</a>
+        <ul class="nav">
+            <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+            <li><a href="aboutUs.html">About</a></li>
+            <li><a href="Program.html">Program</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="learn.html">Learn</a></li>
+            <li><a href="signUp.html">SignUp</a></li>
+        </ul>
+        <div class="search-container">
+            <button id="open-search" class="search-btn">
+                <i class="fas fa-search"></i>
+            </button>
+            <div id="search-overlay" class="search-overlay hidden">
+                <button id="close-search" class="close-btn">&times;</button>
+                <div class="search-box">
+                    <input type="text" placeholder="Search here..." id="search-input" />
+                    <button class="search-icon">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="voice-icon">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+                    <div id="loading-spinner" class="spinner hidden"></div>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </header>
+<body>
+    <section class="learn-section">
+        <div class="learn-container">
+            <div class="learn-header">
+                <h2>Learn and Inspire</h2>
+                <p>Empowering individuals through knowledge, action, and innovation in food sustainability.</p>
+            </div>
+            <div class="learn-cards">
+                <div class="learn-card">
+                    <h3>Workshops</h3>
+                    <p>Join expert-led sessions to turn everyday leftovers into culinary masterpieces.</p>
+                </div>
+                <div class="learn-card">
+                    <h3>Guided Videos</h3>
+                    <p>Step-by-step tutorials designed for every skill level to reduce food waste.</p>
+                </div>
+                <div class="learn-card">
+                    <h3>Community Connect</h3>
+                    <p>Share ideas, stories, and resources in a collaborative, global network.</p>
+                </div>
+                <div class="learn-card">
+                    <h3>Innovative Recipes</h3>
+                    <p>Discover creative ways to cook sustainably and maximize ingredient usage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<style>
+    /* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #162447, #1f5868, #571b23);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.learn-section {
+    width: 100%;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.learn-container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.learn-header h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #e84545, #903749);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.learn-header p {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.learn-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.learn-card {
+    flex: 1 1 250px;
+    max-width: 280px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+}
+
+.learn-card:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.learn-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    background: linear-gradient(to right, #00d9ff, #e84545);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+.learn-card p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+}
+
+/* Gradient Animation */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .learn-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .learn-card {
+        max-width: 90%;
+    }
+}
+</style>
+</body>
+</html>    

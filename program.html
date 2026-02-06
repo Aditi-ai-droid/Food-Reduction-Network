@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Food Reduction Network</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Food Reduction Network</a>
+        <ul class="nav">
+            <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+            <li><a href="aboutUs.html">About</a></li>
+            <li><a href="Program.html">Program</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="learn.html">Learn</a></li>
+            <li><a href="signUp.html">SignUp</a></li>
+        </ul>
+        <div class="search-container">
+            <button id="open-search" class="search-btn">
+                <i class="fas fa-search"></i>
+            </button>
+            <div id="search-overlay" class="search-overlay hidden">
+                <button id="close-search" class="close-btn">&times;</button>
+                <div class="search-box">
+                    <input type="text" placeholder="Search here..." id="search-input" />
+                    <button class="search-icon">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="voice-icon">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+                    <div id="loading-spinner" class="spinner hidden"></div>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </header>
+
+    <section id="programs" class="program-section">
+        <h2>Our Programs</h2>
+        <p>Explore our initiatives that empower communities, reduce waste, and promote sustainability.</p>
+    
+        <div class="program-grid">
+            <div class="program-card">
+                <img src="assets/image/R1.jpg" alt="Food Rescue Image">
+                <h3>Food Rescue & Redistribution</h3>
+                <p>We partner with local businesses to rescue surplus food and redistribute it to communities in need.</p>
+                <a href="assets/image/food redistribution.html" class="btn-primary">Learn More</a>
+            </div>
+    
+            <div class="program-card">
+                <img src="assets/image/R2.jpg" alt="Community Drive Image">
+                <h3>Community Food Drives</h3>
+                <p>Through our community food drives, we bring people together to collect and distribute food to families in need.</p>
+                <a href="community-drives.html" class="btn-primary">Join Us</a>
+            </div>
+    
+            <div class="program-card">
+                <img src="assets/image/R3.jpg" alt="Workshop Image">
+                <h3>Educational Workshops</h3>
+                <p>We provide educational resources to teach communities about reducing food waste and living sustainably.</p>
+                <a href="workshop.html" class="btn-primary">Attend a Workshop</a>
+            </div>
+    
+            <div class="program-card">
+                <img src="assets/image/R4.jpg" alt="Volunteer Image">
+                <h3>Volunteer Programs</h3>
+                <p>Our volunteers are the backbone of our operations. Join our network of passionate individuals.</p>
+                <a href="volunteer.html" class="btn-primary">Become a Volunteer</a>
+            </div>
+        </div>
+    
+        <div class="cta">
+            <button class="btn-primary">Volunteer Today</button>
+            <button class="btn-secondary">Donate Now</button>
+        </div>
+    </section>
+    <style>
+        /* General Section Styling */
+#programs {
+    padding: 60px 0;
+    background-color: #e0f7e0; /* Light background color for contrast */
+    text-align: center;
+}
+
+#programs h2 {
+    font-size: 36px;
+    color: #005f5f; /* Same blue/teal as the site for consistency */
+    margin-bottom: 20px;
+}
+
+#programs p {
+    font-size: 18px;
+    color: #555; /* Slightly darker shade for readability */
+    margin-bottom: 40px;
+}
+
+/* Program Grid Layout */
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual Program Cards */
+.program-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-5px); /* Slight hover effect for interactivity */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.program-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.program-card h3 {
+    font-size: 22px;
+    color: #005f5f;
+    margin: 20px 0 10px 0;
+}
+
+.program-card p {
+    font-size: 16px;
+    color: #777;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.program-card a.btn-primary {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #005f5f;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.program-card a.btn-primary:hover {
+    background-color: #004848;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 12px 24px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background-color: #ff5722; /* The same orange as your site for consistency */
+    color: #fff;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e64a19;
+}
+
+.btn-secondary {
+    background-color: #005f5f;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #004848;
+}
+
+/* CTA Section */
+.cta {
+    margin-top: 40px;
+}
+
+.cta button {
+    margin: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #programs {
+        padding: 40px 20px;
+    }
+
+    #programs h2 {
+        font-size: 28px;
+    }
+
+    #programs p {
+        font-size: 16px;
+    }
+}
+
+/* General Donate Section Styling */
+#donate {
+    padding: 80px 0;
+    background-color: #f9f9f9; /* Light background for contrast */
+    text-align: center;
+}
+
+#donate h2 {
+    font-size: 36px;
+    color: #005f5f; /* Teal color matching the theme */
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+#donate p {
+    font-size: 18px;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    line-height: 1.8;
+}
+
+/* Donation Button Styling */
+.donate-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+    flex-wrap: wrap;
+}
+
+.donate-button {
+    background-color: #005f5f;
+    /*Tealcolorforbuttons*/color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+}
+
+    </style>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Food Reduction Network</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Food Reduction Network</a>
+        <ul class="nav">
+            <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+            <li><a href="aboutUs.html">About</a></li>
+            <li><a href="Program.html">Program</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="learn.html">Learn</a></li>
+            <li><a href="signUp.html">SignUp</a></li>
+        </ul>
+        <div class="search-container">
+            <button id="open-search" class="search-btn">
+                <i class="fas fa-search"></i>
+            </button>
+            <div id="search-overlay" class="search-overlay hidden">
+                <button id="close-search" class="close-btn">&times;</button>
+                <div class="search-box">
+                    <input type="text" placeholder="Search here..." id="search-input" />
+                    <button class="search-icon">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="voice-icon">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+                    <div id="loading-spinner" class="spinner hidden"></div>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </header>
+<section class="donate-section">
+    <h2 class="donate-title">Food Donation Options</h2>
+    <p class="donate-subtitle">Join us in our mission to reduce food waste and help those in need.</p>
+    <div class="donate-cards">
+      <div class="donate-card">
+        <div class="icon">🍚</div>
+        <h3>Donate Food</h3>
+        <p>Share surplus food with people who need it most.</p>
+        <a href="signUp.html" class="donate-btn">Donate now</a>
+      </div>
+      <div class="donate-card">
+        <div class="icon">🤝</div>
+        <h3>Become a Volunteer</h3>
+        <p>Help us distribute food to local communities.</p>
+        <a href="volunteer.html" class="donate-btn">Join Us</a>
+      </div>
+      <div class="donate-card">
+        <div class="icon">💸</div>
+        <h3>Make a Donation</h3>
+        <p>Support us financially to expand our reach.</p>
+        <a href="signUp.html" class="donate-btn">Support</a>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    /* General Styling */
+.donate-section {
+  background-color: #141414;
+  padding: 150px 40px;
+  text-align: center;
+  color: #fff;
+}
+
+.donate-title {
+  font-size: 2.5em;
+  color: #06D001;
+  margin-bottom: 10px;
+}
+
+.donate-subtitle {
+  font-size: 1.2em;
+  color: #a0a0a0;
+  margin-bottom: 40px;
+}
+
+/* Cards Container */
+.donate-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Card Styling */
+.donate-card {
+  background-color: #1d1d1d;
+  padding: 30px;
+  width: 250px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.donate-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Colored Hover Lines */
+.donate-card::before,
+.donate-card::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #00ff83;
+  left: 0;
+  transition: 0.3s;
+}
+
+.donate-card::before {
+  top: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.donate-card::after {
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.donate-card:hover::before,
+.donate-card:hover::after {
+  transform: scaleX(1);
+}
+
+.donate-card h3 {
+  font-size: 1.5em;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.donate-card p {
+  font-size: 0.9em;
+  color: #b5b5b5;
+  margin-bottom: 20px;
+}
+
+.icon {
+  font-size: 2.5em;
+  color: #00ff83;
+  margin-bottom: 10px;
+}
+
+/* Button Styling */
+.donate-btn {
+  background-color: transparent;
+  border: 2px solid #00ff83;
+  color: #00ff83;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: all 0.3s;
+}
+
+.donate-btn:hover {
+  background-color: #00ff83;
+  color: #1d1d1d;
+}
+
+@media (max-width: 768px) {
+  .donate-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+  </style>
+</body>
+
+</html>  

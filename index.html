@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Food Reduction Network</title>
+</head>
+    <body>
+        <header>
+            <a href="#" class="logo">Food Reduction Network</a>
+            <ul class="nav">
+                <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="Program.html">Program</a></li>
+                <li><a href="Donate.html">Donate</a></li>
+                <li><a href="Learn.html">Learn</a></li>
+                <li><a href="SignUp.html">SignUp</a></li>
+            <!-- Button to Open Sidebar -->
+             
+            </ul>
+            <div class="search-container">
+                <button id="open-search" class="search-btn">
+                    <i class="fas fa-search">
+                    </i>
+                </button>
+                <div id="search-overlay" class="search-overlay hidden">
+                    <button id="close-search" class="close-btn">&times;</button>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search here..." id="search-input" />
+                        <button class="search-icon">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <button class="voice-icon">
+                            <i class="fas fa-microphone"></i>
+                        </button>
+                        <div id="loading-spinner" class="spinner hidden"></div>
+                    </div>
+                </div>
+            </div>
+            <script src="main.js"></script>
+        </header>
+    <main>
+        <div class="banner">
+            <div class="content active">
+                <img src="assets/image/Logo.png"alt="Food" class="food-reduction-network">
+                <h4>
+                    <span>Welcome to a world where<br>every meal 
+                        makes a difference</span>
+                </h4>
+                <p>
+                    "This platform transforms food waste into opportunities <br>nurturing communities and protecting our planet."
+                </p>
+                <div class="button">
+                    <a href="join us.html"><i class="fa fa-play" aria-hidden="true"></i> Join Us</a>
+                    <a href="see more.html"><i class="fa fa-plus" aria-hidden="true"></i> See More</a>
+                </div>
+
+
+            <div class="carousel-box">
+              <div class="carousel">
+                  <div class="carousel-item" onclick="changeBg('bg-theconvenant.jpg','the-convenant');">
+                      <img src="assets/image/v3.jpg" alt="">
+                  </div>
+                  <div class="carousel-item" onclick="changeBg('bg-theconvenant.jpg','the-convenant');">
+                      <img src="assets/image/v5.jpg" alt="">
+                  </div>
+                  <div class="carousel-item" onclick="changeBg('bg-theconvenant.jpg','the-convenant');">
+                      <img src="assets/iamge/v67.jpg" alt="">
+                  </div>
+                  <div class="carousel-item" onclick="changeBg('bg-theconvenant.jpg','the-convenant');">
+                      <img src="assets/image/v6.jpg" alt="">
+                  </div>
+                  <div class="carousel-item" onclick="changeBg('bg-theconvenant.jpg','the-convenant');">
+                      <img src="assets/image/food2.jpg" alt="">
+                  </div>
+                  <div class="carousel-item" onclick="changeBg('bg-theconvenant.jpg','the-convenant');">
+                    <img src="assets/image/v9.jpg" alt="">
+                </div>
+          </div>
+    
+            <a href="https://youtu.be/ZshyEGk1ahU?si=HeWOLxfLPTWXSxVH" class="play" onclick="toggleVideo();"><i class="fa fa-play-circle" aria-hidden="true"></i> Watch Video</a>
+            
+            <ul class="sci">
+                <li><a href="https://www.facebook.com/watch/?v=356138630355940"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="https://youtu.be/phbZfqyo-z8?si=Bmn_HykZIJiq8qH4"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                
+                <li><i class="fa fa-times close-icon" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.carousel').carousel();
+            });
+        </script>
+        <srcipt src="main.js"></srcipt>
+        
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>
+                        Welcome to the Food Reduction Network, where we transform food waste into opportunities, nurturing communities and protecting our planet. Our mission is to reduce food waste and ensure that surplus food reaches those who need it the most.
+                    </p>
+                    <p>
+                        Join us in making a difference, one meal at a time. Together, we can create a sustainable future by ensuring that no food goes to waste.
+                    </p>
+                    <a href="learn more.html" class="about-btn">Learn More</a>
+                </div>
+                <div class="about-img">
+                    <img src="assets/image/A1.jpg"About Us">
+                </div>
+            </div>
+        </section>
+    
+        
+        
+        
+  
+    
+    
+    <section id="reward-section" class="reward-section">
+        <div class="reward-container">
+            <h2 class="reward-heading">Earn Rewards for Making a Difference</h2>
+            <p class="reward-description">Join our mission to reduce food waste and get rewarded for your efforts! Here's how:</p>
+
+            <div class="reward-steps">
+                <div class="step">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <div class="step-icon">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                            <h3>Step 1: Sign Up</h3>
+                            <p>Become a member and get started on our mission to reduce food waste.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <div class="step-icon">
+                                <i class="fas fa-hand-holding-heart"></i>
+                            </div>
+                            <h3>Step 2: Contribute</h3>
+                            <p>Donate or take steps to reduce food waste in your community.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <div class="step-icon">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                            <h3>Step 3: Earn Points</h3>
+                            <p>Collect points for every action you take to help the cause.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="step">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <div class="step-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h3>Step 4: Redeem Rewards</h3>
+                            <p>Use your points to unlock amazing rewards, discounts, and perks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div style="text-align:center; margin-top: 50px;">
+        <h2>Our Location in India</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.849360482973!2d79.07172277517073!3d21.14580017968519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c092c3e215a9%3A0x1d1b2c85089424b2!2sNagpur%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sus!4v1697236561741!5m2!1sen!2sus"
+            width="600"
+            height="450"
+            style="border:0; border-radius:10px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').carousel();
+
+            // Food Calculator functionality
+            $('#calculator-form').on('submit', function(e) {
+                e.preventDefault();
+                const foodType = $('#food-type').val();
+                const quantity = $('#quantity').val();
+                // You can replace this with your calculation logic
+                const resultText = `You entered ${quantity} kg of ${foodType}.`;
+                $('#result').text(resultText);
+            });
+        });
+    </script>
+    <script src="main.js"></script>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="mission">
+                <h4>Our Mission</h4>
+                <p>Reducing food waste, supporting communities, and building a sustainable planet. Together, we make a difference.</p>
+            </div>
+            <div class="quick-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Impact Reports</a></li>
+                    <li><a href="#">Volunteer with Us</a></li>
+                    <li><a href="#">Partner with Us</a></li>
+                    <li><a href="#">Reuse Recipes</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h4>Contact Us</h4>
+                <p>Email: info@foodreduction.org</p>
+                <p>Phone: +91-9876543210</p>
+                <p>Address: 123 Save Food Lane, Bangalore, India</p>
+            </div>
+            <div class="stats">
+                <h4>Our Impact</h4>
+                <p>Meals Saved: <strong>10,000+</strong></p>
+                <p>Families Supported: <strong>500+</strong></p>
+            </div>
+            <div class="social-media">
+                <h4>Connect with Us</h4>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Food Reduction Network. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    
+    </div>
+</footer>
+</body>
+</html>
+
+

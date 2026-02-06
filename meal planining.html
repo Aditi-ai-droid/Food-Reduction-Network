@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meal Planning</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="meal-planning-section">
+    <div class="frosted-container">
+      <h2 class="section-title">Meal Planning</h2>
+      <p class="section-description">
+        Plan your meals efficiently to reduce food waste and save time. Here's a weekly meal planner to get you started!
+      </p>
+
+      <!-- Meal Planner Table -->
+      <div class="meal-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Breakfast</th>
+              <th>Lunch</th>
+              <th>Dinner</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>Oatmeal with Fruits</td>
+              <td>Grilled Chicken Salad</td>
+              <td>Vegetable Stir Fry</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>Avocado Toast</td>
+              <td>Quinoa Bowl</td>
+              <td>Spaghetti with Tomato Sauce</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>Fruit Smoothie</td>
+              <td>Vegetable Wraps</td>
+              <td>Grilled Fish & Rice</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>Pancakes</td>
+              <td>Chicken Soup</td>
+              <td>Vegetable Curry & Roti</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>Scrambled Eggs</td>
+              <td>Vegetable Pasta</td>
+              <td>Beef or Veggie Burger</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>Yogurt & Granola</td>
+              <td>Rice Bowl with Beans</td>
+              <td>Pizza (Homemade)</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>Waffles</td>
+              <td>Grilled Cheese Sandwich</td>
+              <td>Soup & Salad</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <button class="action-btn">Download Planner</button>
+    </div>
+  </section>
+  <style>
+    /* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background: url('meal planing food.jpg') no-repeat center center/cover;
+}
+
+/* Meal Planning Section */
+.meal-planning-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.frosted-container {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(4px);
+  text-align: center;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 15px 29px rgba(2, 129, 120, 0.5);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #ff9068;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.section-description {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #ddd;
+}
+
+/* Meal Table */
+.meal-table {
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+.meal-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.meal-table th, .meal-table td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.meal-table th {
+  background: rgba(0, 0, 0, 0.7);
+  color: #ff9068;
+  font-size: 1.1rem;
+}
+
+.meal-table tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Button */
+.action-btn {
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background: linear-gradient(45deg, #ff9068, #ff6f61);
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.action-btn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #ff6f61, #ff9068);
+}
+
+  </style>
+</body>
+</html>
